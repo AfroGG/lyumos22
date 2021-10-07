@@ -619,7 +619,111 @@ body {
 .author__text {
   margin: 0;
 }
-
+.contact {
+  padding-top: 130px;
+  padding-bottom: 119px;
+  background-image: url(../img/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+}
+.contact__container {
+  display: flex;
+  align-items: center;
+}
+.contact__info {
+  margin-right: 30px;
+}
+.contact__heading {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 65px;
+  margin: 0;
+  margin-bottom: 23px;
+}
+.contact__heading span {
+  color: var(--yellow-bg-color);
+}
+.contact__decr {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+.contact__text {
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 33px;
+  display: flex;
+  align-items: center;
+}
+.contact__text::before {
+  content: "";
+  width: 60px;
+  height: 50px;
+  background-repeat: no-repeat;
+  margin-right: 18px;
+  background-size: contain;
+}
+.contact__loading::before {
+  background-image: url(../img/loading-img.png);
+}
+.contact__check::before {
+  background-image: url(../img/calendar-with-check.png);
+}
+.contact__clock::before {
+  background-image: url(../img/clock-img.png);
+}
+.contact__text-accent {
+  color: var(--yellow-bg-color);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+  margin-left: 75px;
+}
+.contact__form {
+  width: 350px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  padding: 32px 29px;
+  display: flex;
+  flex-direction: column;
+}
+.contact__form-text {
+  margin: 0;
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+.contact__form input {
+  padding: 21px 14px 21px 10px;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.contact__form input::placeholder {
+  color: #000;
+}
+.contact__btn {
+  margin-top: 10px;
+  margin-bottom: 26px;
+  box-shadow: 0px 10px 40px rgba(255, 223, 135, 0.5);
+}
+.contact__form-decr {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
 /* RESPONSIVE_STYLES */
 @media only screen and (max-width: 1155px) {
   .marathon__cards {
@@ -684,6 +788,15 @@ body {
   .confidence__text {
     font-size: 32px;
     line-height: 36px;
+  }
+  .contact__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact__info {
+    margin-right: 0;
+    margin-bottom: 32px;
   }
 }
 @media only screen and (max-width: 790px) {
@@ -841,6 +954,25 @@ body {
   .author__text {
     font-size: 14px;
     line-height: 1;
+  }
+  .contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact__heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .contact__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .contact__decr {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .contact__text-accent {
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 480px) {
