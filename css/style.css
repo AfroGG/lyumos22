@@ -724,6 +724,66 @@ body {
   font-size: 14px;
   line-height: 18px;
 }
+/* SITE_FOOTER */
+.site-footer {
+  background-color: var(--dark-purple);
+  padding-top: 30px;
+  padding-bottom: 42px;
+  color: #f4f9ff;
+  font-size: 14px;
+  line-height: 17px;
+}
+.site-footer__container {
+  display: flex;
+}
+.site-footer__info {
+  margin-right: 69px;
+  margin-top: auto;
+}
+.site-footer__info span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  white-space: nowrap;
+}
+.site-footer__about {
+  padding-left: 31px;
+  border-left: 1px solid #f6f6f6;
+  margin-right: 64px;
+  margin-top: auto;
+}
+.site-footer__about span {
+  display: block;
+  margin-bottom: 5px;
+}
+.site-footer__about p {
+  margin: 0;
+  margin-top: 10px;
+}
+.site-footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+.site-footer__call {
+  color: #f4f9ff;
+  text-decoration: none;
+  margin-top: 25px;
+}
+.site-footer__contact p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.site-footer__email {
+  color: #f4f9ff;
+  text-decoration: none;
+}
+address {
+  width: 350px;
+}
 /* RESPONSIVE_STYLES */
 @media only screen and (max-width: 1155px) {
   .marathon__cards {
@@ -779,6 +839,28 @@ body {
   }
   .site-header__text {
     width: 100%;
+  }
+  .site-footer__container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .site-footer__about,
+  .site-footer__info {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .site-footer__contact {
+    justify-content: center;
+    align-items: center;
+  }
+  .site-footer__about {
+    border: none;
+  }
+  address {
+    width: 100%;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 876px) {
